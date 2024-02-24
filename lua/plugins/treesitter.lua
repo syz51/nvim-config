@@ -8,6 +8,7 @@ return {
         "css",
         "typescript",
         "astro",
+        "templ",
       })
     end,
   },

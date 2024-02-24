@@ -10,6 +10,7 @@ return {
       },
     },
   },
+
   {
     "nvim-pack/nvim-spectre",
     keys = {
@@ -20,6 +21,17 @@ return {
         end,
         desc = "Find In Current File",
       },
+    },
+  },
+
+  {
+    "laytan/tailwind-sorter.nvim",
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
+    build = "cd formatter && npm install && npm run build",
+    config = true,
+    ft = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+    opts = {
+      on_save_enabled = true,
     },
   },
 }
