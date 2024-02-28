@@ -34,4 +34,30 @@ return {
       on_save_enabled = true,
     },
   },
+
+  {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    config = function()
+      require("harpoon"):setup({})
+    end,
+    keys = {
+      {
+        "<leader>hp",
+        function()
+          local harpoon = require("harpoon")
+          harpoon.ui:toggle_quick_menu(harpoon:list())
+        end,
+        desc = "harpoon quick menu",
+      },
+      {
+        "<leader>ha",
+        function()
+          require("harpoon"):list():append()
+        end,
+        desc = "harpoon file",
+      },
+    },
+  },
 }
