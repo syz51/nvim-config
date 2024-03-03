@@ -60,4 +60,32 @@ return {
       },
     },
   },
+
+  {
+    "olexsmir/gopher.nvim",
+    dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
+    ft = { "go", "gomod" },
+    config = function(_, opts)
+      require("gopher").setup(opts)
+    end,
+    build = function()
+      vim.cmd([[silent! GoInstallDeps]])
+    end,
+    keys = {
+      {
+        "<leader>gu",
+        desc = "update go modules",
+        function()
+          vim.cmd([[GoGet -u]])
+        end,
+      },
+      {
+        "<leader>gt",
+        desc = "tidy go modules",
+        function()
+          vim.cmd([[GoMod tidy]])
+        end,
+      },
+    },
+  },
 }
