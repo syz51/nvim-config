@@ -29,7 +29,7 @@ return {
     dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
     build = "cd formatter && npm install && npm run build",
     config = true,
-    ft = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact" },
+    ft = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "heex" },
     opts = {
       on_save_enabled = true,
     },
