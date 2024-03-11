@@ -6,6 +6,7 @@ return {
         "css",
         "templ",
         "graphql",
+        "gleam",
       })
     end,
   },
