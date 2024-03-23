@@ -5,7 +5,6 @@ return {
       vim.list_extend(opts.ensure_installed, {
         "templ",
         "graphql-language-service-cli",
-        "gleam",
       })
     end,
   },
