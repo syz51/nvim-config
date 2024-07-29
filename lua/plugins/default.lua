@@ -31,7 +31,7 @@ return {
     config = true,
     ft = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "heex" },
     opts = {
-      on_save_enabled = true,
+      -- on_save_enabled = true,
     },
   },
 
