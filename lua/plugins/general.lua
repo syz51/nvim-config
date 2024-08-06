@@ -18,15 +18,4 @@ return {
       },
     },
   },
-
-  {
-    "laytan/tailwind-sorter.nvim",
-    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-lua/plenary.nvim" },
-    build = "cd formatter && pnpm i && pnpm build",
-    config = true,
-    ft = { "html", "css", "javascript", "typescript", "javascriptreact", "typescriptreact", "heex" },
-    opts = {
-      on_save_enabled = true,
-    },
-  },
 }

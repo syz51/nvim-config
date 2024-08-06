@@ -7,6 +7,8 @@ return {
       "css",
       "templ",
       "graphql",
+      "zig",
+      "powershell",
     })
   end,
 }
