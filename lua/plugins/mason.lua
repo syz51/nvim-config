@@ -7,6 +7,7 @@ return {
         "graphql-language-service-cli",
         "powershell-editor-services",
         "zls",
+        "pbls",
       })
     end,
   },
